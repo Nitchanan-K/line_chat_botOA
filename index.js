@@ -4,7 +4,7 @@ const app = express()
 const PORT = process.env.PORT || 5500 //
 const TOKEN = 'U9Zbez22zmgtvyj1y8AwjqQ1TzXQZFdhISUWZ7QwR18iVRJVV/MYknFCEbnC7uI/blfRJZN/MqwDf+1hw5sKYAsc8STBsxz4C3xtQKEqh2hQweLg6qHlj7AC+s0RxxzeHuloU7xQjhlW8dFt1jJiyQdB04t89/1O/w1cDnyilFU='
 // import 
-import {text_from_html} from './script.js';
+
 
 app.use(express.json())
 app.use(express.urlencoded({
@@ -30,7 +30,7 @@ app.post("/webhook", (req, res) => {
             },
             {
                 "type": "text",
-                "text": text_from_html
+                "text": "test text number 2"
             }
           ]
         })
